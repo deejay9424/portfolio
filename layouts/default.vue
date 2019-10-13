@@ -42,12 +42,7 @@
       >
         <v-icon>mdi-application</v-icon>
       </v-btn>
-      <v-btn
-        icon
-        @click.stop="fixed = !fixed"
-      >
-        <v-icon>mdi-minus</v-icon>
-      </v-btn>
+      
       <v-toolbar-title v-text="title" />
       <v-spacer />
       <v-btn
@@ -98,19 +93,29 @@ export default {
       items: [
         {
           icon: 'mdi-apps',
-          title: 'Welcome',
+          title: 'Home',
           to: '/'
         },
         {
-          icon: 'mdi-chart-bubble',
-          title: 'Inspire',
-          to: '/inspire'
+          icon: 'mdi-clipboard-text',
+          title: 'Projects',
+          to: '/projects'
+        },
+        {
+          icon: 'mdi-certificate',
+          title: 'Certificates',
+          to: '/certificates'
+        },
+        {
+          icon: 'mdi-information',
+          title: 'About',
+          to: '/about'
         }
       ],
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: 'Vuetify.js'
+      title: 'My Portfolio'
     }
   }
 }

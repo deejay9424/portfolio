@@ -26,6 +26,10 @@ export default () => ({
         firstName:'Dhruv',
         lastName:'Jain',
         bio:'Coolest Software Developer',
-        imageSrc:'/Dj.jpg'
+        imageSrc:'/Dj.jpg',
+        contactNumber:'+91-7500169424',
+        contactEmail:'dhruvjain261296@gmail.com',
+        currentCompany:'Voith Digital Ventures',
+        education:'Bachelor\'s of Engineering and Technology in Computer Science from Government Engineering Technology Bikaner(2018)'
     }
 })

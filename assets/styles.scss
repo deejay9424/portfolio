@@ -4,3 +4,11 @@
 .text-xs-center{
     text-align: center;
 }
+@media (min-width: 1264px){
+    .container {
+        max-width: 100% !important;
+    }    
+}
+.pt-1{
+    padding-top: 1%;
+}

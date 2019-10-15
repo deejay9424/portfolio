@@ -20,5 +20,12 @@ export default () => ({
             title: 'About',
             to: '/about'
         }
-    ]
+    ],
+    user:{
+        title:'Software Developer',
+        firstName:'Dhruv',
+        lastName:'Jain',
+        bio:'Coolest Software Developer',
+        imageSrc:'/Dj.jpg'
+    }
 })

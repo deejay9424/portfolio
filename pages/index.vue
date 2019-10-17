@@ -3,6 +3,7 @@
     <v-layout justify-center wrap>
       <photo-card :user="getUser" />
       <personal-details :user="getUser"/>
+      <training-and-experiences />
     </v-layout>
   </v-container>
 </template>
@@ -11,13 +12,15 @@
 import Logo from "~/components/Logo.vue";
 import PhotoCard from "~/components/PhotoCard.vue";
 import PersonalDetails from "~/components/PersonalDetails.vue";
+import TrainingAndExperiences from "~/components/TrainingAndExperiences";
 import { mapGetters } from "vuex";
 
 export default {
   components: {
     Logo,
     PhotoCard,
-    PersonalDetails
+    PersonalDetails,
+    TrainingAndExperiences
   },
   computed: {
     ...mapGetters(["getUser"])

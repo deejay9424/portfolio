@@ -4,5 +4,8 @@ export default{
     },
     getUser(state){
         return state.user;
+    },
+    getTimelineItems(state){
+        return state.timelineItems;
     }
 }

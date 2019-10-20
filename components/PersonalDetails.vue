@@ -1,9 +1,9 @@
 <template>
   <v-flex xs12 md8>
     <v-card>
-      <v-card-title>Details</v-card-title>
+      <v-card-title>Personal Details</v-card-title>
       <!-- Form -->
-      <v-card-text class="pt-1">
+      <v-card-text class="pt-1 pb60" >
       <v-form>
         <v-container py-0>
           <v-layout wrap>
@@ -20,13 +20,10 @@
               <v-label>E-mail : {{user.contactEmail}}</v-label>
             </v-flex>
             <v-flex xs12 md6>
-              <v-label>Current Company : {{user.currentCompany}}</v-label>
+              <v-label>Current Employer : {{user.currentCompany}}</v-label>
             </v-flex>
             <v-flex xs12 md6>
               <v-label>Education : {{user.education}}</v-label>
-            </v-flex>
-            <v-flex xs12 md12>
-              <v-label>Bio : {{user.bio}}</v-label>
             </v-flex>
           </v-layout>
         </v-container>
@@ -45,3 +42,8 @@ export default {
     }
 };
 </script>
+<style scoped>
+.pb60{
+  padding-bottom: 60px;
+}
+</style>

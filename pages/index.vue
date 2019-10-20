@@ -3,7 +3,8 @@
     <v-layout justify-center wrap>
       <photo-card :user="getUser" />
       <personal-details :user="getUser"/>
-      <training-and-experiences />
+      <training-and-experiences :getTimelineItems="getTimelineItems"/>
+      <technologies :getTechnologiesData="getTechnologiesData"/>
     </v-layout>
   </v-container>
 </template>
@@ -13,6 +14,7 @@ import Logo from "~/components/Logo.vue";
 import PhotoCard from "~/components/PhotoCard.vue";
 import PersonalDetails from "~/components/PersonalDetails.vue";
 import TrainingAndExperiences from "~/components/TrainingAndExperiences";
+import Technologies from "~/components/Technologies";
 import { mapGetters } from "vuex";
 
 export default {
@@ -20,10 +22,11 @@ export default {
     Logo,
     PhotoCard,
     PersonalDetails,
-    TrainingAndExperiences
+    TrainingAndExperiences,
+    Technologies
   },
   computed: {
-    ...mapGetters(["getUser"])
+    ...mapGetters(["getUser","getTechnologiesData","getTimelineItems"])
   }
 };
 </script>

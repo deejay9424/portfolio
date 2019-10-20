@@ -7,5 +7,8 @@ export default{
     },
     getTimelineItems(state){
         return state.timelineItems;
+    },
+    getTechnologiesData(state){
+        return state.technologiesData;
     }
 }

@@ -27,6 +27,9 @@ export default {
   },
   computed: {
     ...mapGetters(["getUser","getTechnologiesData","getTimelineItems"])
+  },
+  created(){
+    this.$store.commit("SET_PAGE_TITLE","Home")
   }
 };
 </script>

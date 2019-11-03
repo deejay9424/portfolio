@@ -55,7 +55,12 @@ import { mapGetters } from "vuex";
 
 export default {
   computed: {
-    ...mapGetters(["getMenuItems"])
+    getMenuItems(){
+      return this.$store.getters.getMenuItems;
+    },
+    title(){
+      return this.$store.getters.getAppTitle;
+    }
   },
   data () {
     return {
@@ -64,7 +69,6 @@ export default {
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: 'My Portfolio',
       getDark:false
     }
   }

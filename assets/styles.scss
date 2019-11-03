@@ -18,3 +18,16 @@
 .card-inner{
     font-size: 1.1rem !important;
 }
+.technology-card-text{
+    overflow-y: auto;
+    max-height: 735px;
+}
+.technologies-row-2{
+    display:inline-block;
+    float:right;
+}
+@media (max-width: 1264px){
+    .technologies-row-2{
+        float:none;
+    }   
+}

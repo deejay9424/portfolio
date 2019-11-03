@@ -10,5 +10,11 @@ export default{
     },
     getTechnologiesData(state){
         return state.technologiesData;
+    },
+    getAppTitle(state){
+        return state.title;
+    },
+    certificatesData(state){
+        return state.certificatesData;
     }
 }
